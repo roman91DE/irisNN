@@ -1,0 +1,15 @@
+[project]
+name = "irisnn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter>=1.1.1",
+    "notebook>=7.4.4",
+    "numpy>=2.3.1",
+    "pandas>=2.3.0",
+    "pylance>=0.31.0",
+    "ruff>=0.12.2",
+    "torch>=2.7.1",
+]
