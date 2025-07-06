@@ -95,14 +95,13 @@ test_loader = DataLoader(iris_test_ds, batch_size=bs, shuffle=False)
 # In[46]:
 
 
-# Adjust dropout to 10% and simplify the model architecture
 class IrisClassifier(nn.Module):
     def __init__(self):
         super(IrisClassifier, self).__init__()
         self.net = nn.Sequential(
             nn.Linear(4, 32),
             nn.ReLU(),
-            nn.Dropout(0.01),  # Dropout with 10% probability
+            nn.Dropout(0.01),  # Dropout with 1% probability
             nn.Linear(32, 16),
             nn.ReLU(),
             nn.Linear(16, 3),
